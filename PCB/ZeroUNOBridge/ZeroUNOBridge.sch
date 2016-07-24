@@ -167,15 +167,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <packages>
 <package name="2X20-SHROUDED">
 <wire x1="-2.775" y1="24.765" x2="-2.775" y2="23.495" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="29.15" x2="4.5" y2="-29.15" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="-29.15" x2="-4.5" y2="29.15" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="29.15" x2="4.4" y2="29.15" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="-29.15" x2="-4.5" y2="-29.15" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="28.05" x2="3.4" y2="28.05" width="0.2032" layer="51"/>
-<wire x1="3.4" y1="28.05" x2="3.4" y2="-28.05" width="0.2032" layer="51"/>
-<wire x1="-3.4" y1="-28.05" x2="3.4" y2="-28.05" width="0.2032" layer="51"/>
-<wire x1="-3.4" y1="28.05" x2="-3.4" y2="2.2" width="0.2032" layer="51"/>
-<wire x1="-3.4" y1="-28.05" x2="-3.4" y2="-2.2" width="0.2032" layer="51"/>
 <pad name="1" x="-1.27" y="24.13" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
 <pad name="2" x="1.27" y="24.13" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
 <pad name="3" x="-1.27" y="21.59" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
@@ -264,9 +255,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-1.524" y1="-19.304" x2="-1.016" y2="-18.796" layer="51"/>
 <rectangle x1="-1.524" y1="-21.844" x2="-1.016" y2="-21.336" layer="51"/>
 <rectangle x1="-1.524" y1="-24.384" x2="-1.016" y2="-23.876" layer="51"/>
-<wire x1="-4.5" y1="2.2" x2="-3" y2="2.2" width="0.2032" layer="21"/>
-<wire x1="-3" y1="-2.2" x2="-4.5" y2="-2.2" width="0.2032" layer="21"/>
-<wire x1="-3" y1="2.2" x2="-3" y2="-2.2" width="0.2032" layer="21"/>
 </package>
 <package name="2X20-SHROUDED-SMT">
 <description>2x20, 0.1" pitch shrouded connector.
@@ -4828,11 +4816,14 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <part name="LED2" library="adafruit" deviceset="LED" device="5MM"/>
 <part name="LED3" library="adafruit" deviceset="LED" device="5MM"/>
 <part name="LED4" library="adafruit" deviceset="LED" device="5MM"/>
-<part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R7" library="SparkFun-Sensors" deviceset="PHOTOCELL" device="PTH"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/4W"/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="J4" library="SparkFun-Connectors" deviceset="M02" device="2.54MM_SCREWTERM"/>
+<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4868,13 +4859,16 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <instance part="LED2" gate="G$1" x="-15.24" y="109.22" rot="R270"/>
 <instance part="LED3" gate="G$1" x="-10.16" y="104.14" rot="R270"/>
 <instance part="LED4" gate="G$1" x="170.18" y="88.9" rot="R90"/>
-<instance part="GND8" gate="1" x="177.8" y="83.82"/>
 <instance part="R7" gate="G$1" x="149.86" y="116.84" smashed="yes" rot="R180">
 <attribute name="NAME" x="154.94" y="113.792" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="R8" gate="G$1" x="139.7" y="124.46" rot="R90"/>
 <instance part="GND9" gate="1" x="160.02" y="111.76"/>
 <instance part="SUPPLY3" gate="G$1" x="139.7" y="132.08"/>
+<instance part="J4" gate="G$1" x="30.48" y="134.62" rot="R180"/>
+<instance part="SUPPLY4" gate="G$1" x="20.32" y="137.16"/>
+<instance part="GND10" gate="1" x="20.32" y="127"/>
+<instance part="GND8" gate="1" x="177.8" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -4991,6 +4985,18 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <wire x1="157.48" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="116.84" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="20.32" y1="129.54" x2="20.32" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="132.08" x2="22.86" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="175.26" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="88.9" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -5029,6 +5035,12 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <pinref part="SUPPLY3" gate="G$1" pin="5V"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="132.08" x2="139.7" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY4" gate="G$1" pin="5V"/>
+<wire x1="20.32" y1="137.16" x2="20.32" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="134.62" x2="22.86" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -5200,14 +5212,6 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="165.1" y1="88.9" x2="167.64" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="LED4" gate="G$1" pin="C"/>
-<wire x1="175.26" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="88.9" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$9" class="0">
