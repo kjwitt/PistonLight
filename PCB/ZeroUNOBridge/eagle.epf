@@ -1,0 +1,40 @@
+[Eagle]
+Version="06 06 00"
+Platform="Windows"
+Serial="6F16ADA48F-LSR-WLM-3EP"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/Adafruit-Eagle-Library/adafruit.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/GeekAmmo.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/LilyPad-Wearables.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-Aesthetics.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-AnalogIC.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-Boards.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-Capacitors.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-Connectors.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-DigitalIC.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-Displays.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-DiscreteSemi.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-Electromechanical.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-LED.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-FreqCtrl.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-Passives.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-PowerIC.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-Retired.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-Resistors.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-RF.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/SparkFun-Sensors.lbr"
+UsedLibrary="D:/OneDrive/Documents/Development/GitHub/Eagle Libraries/SparkFun-Eagle-Libraries/User-Submitted.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="972 501 2138 1288"
+State=2
+Number=0
+
+[Desktop]
+Screen="2560 1440"
+Window="Win_1"
